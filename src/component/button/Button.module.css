@@ -1,0 +1,16 @@
+.container
+{
+    padding: 20px;
+    /* padding-inline: 60px; */
+    cursor: pointer;
+    background-color: #b54149;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+    border: 1px solid #b54149;
+}
+.container:hover
+{
+    background: transparent;
+}

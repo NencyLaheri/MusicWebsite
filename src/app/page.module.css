@@ -1,0 +1,63 @@
+.container
+{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.item
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.title
+{
+    font-size: 72px;
+    background: linear-gradient(to bottom, #b54149, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    animation: move 3s infinite ease alternate; 
+}
+@keyframes move
+{
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+.desc
+{
+    font-size: 24px;
+    font-weight: 300px;
+}
+/* .btn
+{
+    padding: 20px;
+    cursor: pointer;
+    background-color: #194c33;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+    border: 1px solid #194c33;
+}
+.btn:hover
+{
+    background-color: transparent;
+} */
+.overlay {
+    position: absolute;
+    top:5;
+    right: 10;
+    
+    /* Additional styling properties as needed */
+  }
