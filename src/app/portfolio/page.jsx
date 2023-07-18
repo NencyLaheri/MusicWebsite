@@ -13,33 +13,33 @@ const Portfolio = () => {
         <h1 className={styles.selectTitle}>Choose a Gallary</h1>
         <div className={styles.items}>
           <div className={styles.itemdiv}>
-            <Link href="/portfolio/illustrations" className={styles.item}>
+            <Link href="/portfolio/Classes" className={styles.item}>
               <Image src={cimg} fill={true} className={styles.img}/>
               {/* <span className={styles.title}>Classes</span> */}
             </Link>
-            <h1 className={styles.h1tag}><a href="/portfolio/illustrations">Classes</a> </h1>
+            <h1 className={styles.h1tag}><a href="/portfolio/Classes">Classes</a> </h1>
           </div>
           <div className={styles.itemdiv}>
-            <Link href="/portfolio/websites" className={styles.item}>
+            <Link href="/portfolio/Instruments" className={styles.item}>
             <Image src={iimg} fill={true} className={styles.img}/>
               {/* <span className={styles.title}>Instruments</span> */}
             </Link>
-            <h1 className={styles.h1tag}><a href="/portfolio/websites">Instruments</a></h1>
+            <h1 className={styles.h1tag}><a href="/portfolio/Instruments">Instruments</a></h1>
           </div>
           <div className={styles.itemdiv}>
-            <Link href="/portfolio/application" className={styles.item}>
+            <Link href="/portfolio/Events" className={styles.item}>
               <Image src={eimg} fill={true} className={styles.img}/>
               {/* <span className={styles.title}>Events</span> */}
             </Link>
-            <h1 className={styles.h1tag}><a href="/portfolio/application"> Events</a></h1>
+            <h1 className={styles.h1tag}><a href="/portfolio/Events"> Events</a></h1>
           </div>
-          <div className={styles.itemdiv}>
-            <Link href="/portfolio/playlists" className={styles.item}>
+          {/* <div className={styles.itemdiv}>
+            <Link href="/portfolio/Playlists" className={styles.item}>
               <Image src={pimg} fill={true} className={styles.img}/>
               {/* <span className={styles.title}>Events</span> */}
-            </Link>
-            <h1 className={styles.h1tag}><a href="/portfolio/application"> Playlists</a></h1>
-          </div>
+            {/* </Link>
+            <h1 className={styles.h1tag}><a href="/portfolio/Playlists"> Playlists</a></h1>
+          </div> */} 
           
         </div>
     </div>

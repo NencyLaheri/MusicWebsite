@@ -19,21 +19,32 @@ const links=[
     },
     {
         id:3,
-        title:'Contact',
-        url:"/contact",
+        title:'Portfolio',
+        url:"/portfolio",
+       
     },
     {
         id:4,
-        title:'Portfolio',
-        url:"/portfolio",
+        title:'Blog',
+        url:"/blog",
+       
+       
     },
     {
         id:5,
-        title:'Blog',
-        url:"/blog",
+        title:'Playlist',
+        url:"/playlist",
+       
+       
     },
     {
         id:6,
+        title:'Contact',
+        url:"/contact",
+        
+    },
+    {
+        id:7,
         title:'Dashboard',
         url:"/dashboard",
     },

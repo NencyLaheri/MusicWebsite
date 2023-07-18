@@ -6,7 +6,6 @@ const Layout = ({children}) => {
     <div>
       <h1 className={styles.maintitle}>Our Works</h1>
       {children}
-
     </div>
   )
 }
