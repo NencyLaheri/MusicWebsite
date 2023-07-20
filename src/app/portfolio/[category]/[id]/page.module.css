@@ -1,0 +1,58 @@
+.maindiv
+{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.divcontainer
+{
+    display: flex;
+    /* justify-content:space-between; */
+    gap: 60px;
+}
+.rdiv
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.desc
+{
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: justify;
+}
+.tdiv
+{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.teachers
+{
+    display: flex;
+    justify-content: space-around;
+}
+.theading
+{
+    text-align: center;
+}
+.card
+{
+    display: flex;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    width: 365px;
+    height: 450px;
+    position: relative;
+    background-size: cover !important;
+    color: #bbb;
+    
+}
+.img
+{
+    object-fit: cover;
+    
+    
+}
