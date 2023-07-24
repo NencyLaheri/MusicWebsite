@@ -36,51 +36,301 @@ export const data=[
         {
             id:1,
           title:"Guitar",
-          video:"/guitar.webm"
+          video:"/guitar.webm",
+          teachers:[
+            {
+              id:1,
+              image:'/jimin1.jpg',
+              name:'Park Jimin',
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:2,
+              image:'/v3.jpg',
+              name:'Kim Taehyung',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:3,
+              image:'/kook.jpg',
+              name:'Jeon Jungkook',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+          ],
+          plans:[
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Standard",
+              duration:"8 Classes / Month",
+              price:"₹ 5600",
+              d1:"Beginner Lessons",
+              d2:"8 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Most-Selling",
+              duration:"12 Classes / Quarter",
+              price:"₹ 9600",
+              d1:"Beginner Lessons",
+              d2:"12 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Value-Pack",
+              duration:"48 Classes",
+              price:"₹ 39999",
+              d1:"Beginner Lessons",
+              d2:"48 Online Classes",
+              d3:"60 min / Class",
+              d4:"Classes can be split among family & friends",
+            },
+          ]
         },
         {
             id:2,
           title:"Drums",
-          video:"/drums.mp4"
+          video:"/drums.mp4",
+          teachers:[
+            {
+              id:1,
+              image:'/kook.jpg',
+              name:'Jeon Jungkook',
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:2,
+              image:'/jin.jpg',
+              name:'Kim Seokjin',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:3,
+              image:'/v1.jpg',
+              name:'Kim Taehyung',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+          ],
+          plans:[
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+          ]
         },
         {
             id:3,
           title:"Violin",
-          video:"/violin.mp4"
+          video:"/violin.mp4",
+          teachers:[
+            {
+              id:1,
+              image:'/rm.jpg',
+              name:'Kim Namjoon',
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:2,
+              image:'/jhope.jpg',
+              name:'Jung Hoseok',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+            {
+              id:3,
+              image:'/suga.jpg',
+              name:'Min Yoongi',
+              qualification:"",
+              qualification:"Western music",
+              detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+            },
+          ],
+          plans:[
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+            {
+              plan:"Basic",
+              duration:"4 Classes / Month",
+              price:"₹ 3600",
+              d1:"Beginner Lessons",
+              d2:"4 Online Classes",
+              d3:"60 min / Class",
+              d4:"Regional / English Instructions",
+            },
+          ]
         },
         {
             id:4,
-          title:"Tabla",
-          video:"/tabla.mp4"
+            title:"Tabla",
+            video:"/tabla.mp4",
+            teachers:[
+              {
+                id:1,
+                image:'/v4.jpg',
+                name:'Kim Taehyung',
+                qualification:"Western music",
+                detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+              },
+              {
+                id:2,
+                image:'/jimin1.jpg',
+                name:'Park Jimin',
+                qualification:"",
+                qualification:"Western music",
+                detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+              },
+              {
+                id:3,
+                image:'/v5.jpg',
+                name:'Kim Taehyung',
+                qualification:"",
+                qualification:"Western music",
+                detail:"Our Online Hindi Popular & Film Music Course covers the essential training elements of Hindustani Classical Music, "
+              },
+            ],
+            plans:[
+              {
+                plan:"Basic",
+                duration:"4 Classes / Month",
+                price:"₹ 3600",
+                d1:"Beginner Lessons",
+                d2:"4 Online Classes",
+                d3:"60 min / Class",
+                d4:"Regional / English Instructions",
+              },
+              {
+                plan:"Basic",
+                duration:"4 Classes / Month",
+                price:"₹ 3600",
+                d1:"Beginner Lessons",
+                d2:"4 Online Classes",
+                d3:"60 min / Class",
+                d4:"Regional / English Instructions",
+              },
+              {
+                plan:"Basic",
+                duration:"4 Classes / Month",
+                price:"₹ 3600",
+                d1:"Beginner Lessons",
+                d2:"4 Online Classes",
+                d3:"60 min / Class",
+                d4:"Regional / English Instructions",
+              },
+              {
+                plan:"Basic",
+                duration:"4 Classes / Month",
+                price:"₹ 3600",
+                d1:"Beginner Lessons",
+                d2:"4 Online Classes",
+                d3:"60 min / Class",
+                d4:"Regional / English Instructions",
+              },
+            ]
         },
-        
-        
-      ]
-    },
-    {
-      category:"Events",
-      items:[
-        {
-            id:1,
-          title:" Live Cafe Event",
-          video:"/le1.mp4"
-        },
-        {
-            id:2,
-          title:"Live Cafe Event",
-          video:"/dualipa.mp4"
-        },
-        {
-            id:3,
-          title:"BTS Event",
-          video:"/btevent.mp4"
-        },
-        {
-            id:4,
-          title:"Live Event",
-          video:"/le2.mp4"
-        },
-      ]
+        ]
+      },
+      {
+        category:"Events",
+        items:[
+          {
+              id:1,
+            title:" Live Cafe Event",
+            video:"/le1.mp4"
+          },
+          {
+              id:2,
+            title:"Live Cafe Event",
+            video:"/dualipa.mp4"
+          },
+          {
+              id:3,
+            title:"BTS Event",
+            video:"/btevent.mp4"
+          },
+          {
+              id:4,
+            title:"Live Event",
+            video:"/le2.mp4"
+          },
+        ]
     },
   ]
   

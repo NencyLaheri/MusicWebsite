@@ -43,16 +43,113 @@
     display: flex;
     border: 1px solid #bbb;
     border-radius: 5px;
-    width: 365px;
-    height: 450px;
+    /* /* width: 365px; */
+     height: 450px; 
     position: relative;
     background-size: cover !important;
     color: #bbb;
+    justify-content: center;
+    
     
 }
 .img
 {
+    width: 290px;
+    height: 290px;
     object-fit: cover;
+    border-radius: 50%;
     
-    
+}
+
+.teacherCard{
+    /* border: 1px solid #bbb; */
+    height:490px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 10px;
+    gap: 20px;
+}
+.details
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 12px;
+}
+.FeesClass
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.feesdetails
+{
+    display: flex;
+    gap: 25px;
+    margin-block:50px ;
+}
+.feeCard
+{
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 300px;
+    background-color: #b54149;
+    gap: 12px;
+    padding: 15px;
+    color: black;
+    border-radius: 10px;
+    text-align: start;
+}
+.detaildiv
+{
+    display: flex;
+    gap: 8px;
+}
+.btnDiv
+{
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+.dtl
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: auto;
+    width: 250px;
+}
+.buttonClass
+{
+    height: 40px;
+    font-size: 18px;
+    background-color: black;
+    /* border:1px solid black; */
+    color: white;
+    border: none;
+    width: 130px;
+    margin-block: 10px;
+    border-radius: 10px;
+    /* margin-top: 30px; */
+    cursor: pointer;
+   
+}
+.buttonClass:hover
+{
+   background-color: rgb(17, 17, 17);
+}
+.f1Class
+{
+    background-color: black;
+    width:fit-content;
+    padding-block: 2px;
+    padding-inline: 8px;
+    border-radius: 10px;
+    color: white;
 }

@@ -22,3 +22,75 @@
     font-size: 18px;
     
 }
+.mainDiv
+{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.imgContainer
+{
+    margin-top: 0px;
+    
+}
+.imageClass
+{
+    width: 100%;
+}
+.secContainer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.btnDivClass
+{
+    /* border: 1px solid #b54149; */
+    display: flex;
+
+}
+.btnClass
+{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    border: none;
+    border: 1px solid grey;
+    background-color: #b54149;
+}
+.videoContainer
+{
+    
+}
+.tabs
+{
+    width: 100%;
+}
+.tabList
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #b54149;
+    background-color: #b54149;
+}
+.tabClass
+{
+    width: 100%;
+    list-style-type: none;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 0px;
+
+}
+.tabClass:active
+{
+    border: none;
+    background-color: #b54149;
+}
+.tabpanel
+{
+    margin-top: 50px;
+}
