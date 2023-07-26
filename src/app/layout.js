@@ -2,8 +2,7 @@ import './globals.css'
 import { Inter ,Roboto } from 'next/font/google'
 import Navbar from '@/component/navbar/Navbar'
 import Footer from '@/component/footer/Footer'
-import { ThemeProvider } from '../../context/ThemeContext'
-
+import { ThemeProvider } from '@/context/ThemeContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

@@ -1,0 +1,35 @@
+.rowDiv
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imgClass
+{
+    width:300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    /* object-fit: contain;
+    /* height: 500px; */
+     /* width: 400px;  */
+}
+.imgdiv
+{
+    /* object-fit: contain; */
+    
+}
+.carouselClass
+{
+    
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+} 
+.textClass
+{
+    font-size: 20px;
+}

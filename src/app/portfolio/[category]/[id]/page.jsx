@@ -82,7 +82,9 @@ const FeesDetails=[
             <Button text="Book Now" url="#"/>
         </div>
     </div>
+
     {router.category=="Instruments" ?
+    <>
         <div className={styles.tdiv}>
             <h1 className={styles.theading}>Teachers</h1>
             <div className={styles.teachers}>
@@ -99,60 +101,31 @@ const FeesDetails=[
                 } 
             </div>
         </div>
-        : ""
+
+        <div className={styles.FeesClass}> 
+        <h1>Fees For Courses</h1>
+        <div className={styles.feesdetails}>
+        {categoryItem.plans.map((item)=>(
+              <div className={styles.feeCard}>
+                <div><p className={styles.f1Class}>{item.plan}</p></div>
+                <div><p>{item.duration}</p></div>
+                <div><h1>{item.price}</h1></div>
+                <div className={styles.dtl}>
+                  <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d1}</span></div>
+                  <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d2}</span></div>
+                  <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d3}</span></div>
+                  <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d4}</span></div>
+                </div>
+                <div className={styles.btnDiv}><button className={styles.buttonClass}>Get Started</button></div>
+            </div>
+        ))}
+
+
+        </div>
+        </div>
+      </>
+        : " "
     }
-
-    <div className={styles.FeesClass}> 
-      <h1>Fees For Courses</h1>
-     <div className={styles.feesdetails}>
-      {categoryItem.plans.map((item)=>(
-            <div className={styles.feeCard}>
-              <div><p className={styles.f1Class}>{item.plan}</p></div>
-              <div><p>{item.duration}</p></div>
-              <div><h1>{item.price}</h1></div>
-              <div className={styles.dtl}>
-                <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d1}</span></div>
-                <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d2}</span></div>
-                <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d3}</span></div>
-                <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>{item.d4}</span></div>
-              </div>
-              <div className={styles.btnDiv}><button className={styles.buttonClass}>Get Started</button></div>
-          </div>
-      ))}
-        
-        {/* <div className={styles.feeCard}>
-          <p>Basic</p>
-          <p>4 Classes/Month</p>
-          <h1>&#8377; 3600</h1>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Beginner Lessons</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>4 Online Classes</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>60 min / Class</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Regional / English Instructions</span></div>
-          <button className={styles.buttonClass}>Get Started</button>
-        </div>
-        <div className={styles.feeCard}>
-          <p>Basic</p>
-          <p>4 Classes/Month</p>
-          <h1>&#8377; 3600</h1>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Beginner Lessons</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>4 Online Classes</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>60 min / Class</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Regional / English Instructions</span></div>
-          <button className={styles.buttonClass}>Get Started</button>
-        </div>
-        <div className={styles.feeCard}>
-          <p>Basic</p>
-          <p>4 Classes/Month</p>
-          <h1>&#8377; 3600</h1>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Beginner Lessons</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>4 Online Classes</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>60 min / Class</span></div>
-          <div className={styles.detaildiv}><span><BiCheckCircle style={{fontSize:"20px"}}/></span><span>Regional / English Instructions</span></div>
-          <button className={styles.buttonClass}>Get Started</button>
-        </div> */}
-
-      </div>
-    </div>
 
     </div>
     </>

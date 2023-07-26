@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './page.module.css'
 import Button from '@/component/button/Button'
 import Image from 'next/image'
-import { ThemeContext } from '../../../../context/ThemeContext'
+import { ThemeContext } from '@/context/ThemeContext'
 
 export const data=[
     {

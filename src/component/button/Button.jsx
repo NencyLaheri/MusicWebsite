@@ -2,7 +2,7 @@
 import React, { useContext }  from 'react'
 import styles from './Button.module.css'
 import Link from 'next/link'
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '@/context/ThemeContext'
 
 const Button = ({text,url}) => {
   

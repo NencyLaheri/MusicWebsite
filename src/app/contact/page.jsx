@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/component/button/Button'
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '@/context/ThemeContext'
 
 
 const Contact = () => {

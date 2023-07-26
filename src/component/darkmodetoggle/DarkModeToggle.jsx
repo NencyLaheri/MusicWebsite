@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import styles from './DarkModeToggle.module.css'
 import { HiMoon } from 'react-icons/hi'
 import { HiOutlineSun } from 'react-icons/hi'
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '@/context/ThemeContext'
  
 const DarkModeToggle = () => {
 

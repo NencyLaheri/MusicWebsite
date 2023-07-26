@@ -19,32 +19,27 @@ const About = () => {
       <div className={styles.textContainer}>
           <div className={styles.item}>
             <h1 className={styles.title}>Who Are We?</h1>
-            <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-              suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-              eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-              beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            <p className={styles.desc}>Music School is dedicated to bringing quality music education to the community. 
+            We provide specialized music lessons for both kids and adults, beginners, intermediates and advanced musicians.
+             We believe that the study of music enriches the life of each student and contributes in development of coordination, 
+             self-discipline and provides a lifetime of enjoyment.
               <br />
               <br />
-              voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-              esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-              officiis voluptatum quo ea eveniet?  </p>
+              we provide our students with opportunity for one-on-one sessions with trained music educators aimed at developing their
+               creativity as well as group sessions focused on developing their social skills and confidence. Our music teachers
+                encourage students to learn music via a combination of ear trainning and theory which enhances their proficiency. </p>
           </div>
           <div className={styles.item}>
             <h1 className={styles.title}>What We Do?</h1>
-            <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-              suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-              eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
+            <p className={styles.desc}>Our educators are highly qualified professionals dedicated to bringing out the best in our students.
+             With years of training, performance and teaching experience their expertise makes learning music easier, more enjoyable and fun!
               Creative Illustrations
               <br />
-              <br /> - Dynamic Websites
+              <br /> - EXPERIENCED AND QUALIFIED EDUCATORS
               <br />
-              <br /> - Fast and Handy
+              <br /> - RECOGNIZED AND WELL-DEFINED CURRICULUM
               <br />
-              <br /> - Mobile Apps </p>
+              <br /> - FOCUS ON OVERALL DEVELOPMENT </p>
               <Button url="/contact" text="Contact"/>
           </div>
       </div>

@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import styles from './Navbar.module.css'
 import DarkModeToggle from '../darkmodetoggle/DarkModeToggle'
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '@/context/ThemeContext'
 
 
 const links=[
@@ -19,7 +19,7 @@ const links=[
     },
     {
         id:3,
-        title:'Portfolio',
+        title:'Course',
         url:"/portfolio",
        
     },
@@ -30,13 +30,13 @@ const links=[
        
        
     },
-    {
-        id:5,
-        title:'Playlist',
-        url:"/playlist",
+    // {
+    //     id:5,
+    //     title:'Playlist',
+    //     url:"/playlist",
        
        
-    },
+    // },
     {
         id:6,
         title:'Contact',

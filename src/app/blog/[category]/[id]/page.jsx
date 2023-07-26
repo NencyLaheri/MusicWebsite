@@ -2,7 +2,7 @@
 import React, { useContext } from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
-import { ThemeContext } from '../../../../../context/ThemeContext' 
+import { ThemeContext } from '@/context/ThemeContext'
 import { dataEvent } from '../../page' 
 import { useParams } from 'next/navigation';
 

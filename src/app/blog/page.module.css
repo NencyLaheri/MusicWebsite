@@ -56,7 +56,7 @@
     font-size: 18px;                                                                                                                                                                                                                                                                                                                                                                                                                                                
     border: none;
     border: 1px solid grey;
-    background-color: #b54149;
+   
 }
 .videoContainer
 {
@@ -72,7 +72,7 @@
     width: 100%;
     align-items: center;
     border: 1px solid #b54149;
-    background-color: #b54149;
+    /* background-color: #b54149; */
 }
 .tabClass
 {
@@ -88,9 +88,26 @@
 .tabClass:active
 {
     border: none;
-    background-color: #b54149;
+    /* background-color: #b54149; */
 }
 .tabpanel
 {
     margin-top: 50px;
+}
+.activeTab
+{
+    background-color: #b54149;
+    border: none !important ; 
+}
+.activeTab:focus-visible
+{
+    border: none !important;
+}
+
+.tabList:focus-visible{
+    border: none !important;
+}
+.tabClass:focus-visible
+{
+    border: none !important;
 }
