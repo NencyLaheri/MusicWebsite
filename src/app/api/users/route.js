@@ -1,14 +1,17 @@
 import { NextResponse } from "next/server"
-import connect from "@/utils/db"
 import User from "@/models/User";
+import dbConnect from "../../../../config/dbConnect";
 
-
+dbConnect();
 
 export const GET=async (request)=>
 {
-    try{
-        await connect();
-        const users=await User.find();
+    
+    try{    
+       
+        // await connect();
+        console.log("======");
+        const users=await User.find(); 
         return new NextResponse(JSON.stringify(users),{status:200})
     }catch(err)
     {
@@ -16,3 +19,15 @@ export const GET=async (request)=>
     }
     
 }
+
+
+// export async function GET(request)
+// {
+//     try {
+     
+//         return new Response("hello next next js")
+//     } catch (error) {
+//         return new Response("hello next js")
+//     }
+    
+// }

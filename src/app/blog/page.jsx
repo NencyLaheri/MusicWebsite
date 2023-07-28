@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import bgimage from "public/bgimage.png";
 // import bgvideo from 'public/bgvideo.mp4'
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 export const dataEvent=[
   {
@@ -189,19 +191,20 @@ export const dataBlog=[
   
 ]
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+// const data = []
+async function getdata() {
+  const res = await fetch("http://localhost:3000/api/posts");
 
-// async function getdata() {
-  // const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  if (!res.ok) {
+    throw new Error("failed to fetch data");
+  }
+  // return res.json();
+  // console.log('res.json()-----------',res.json());
+  const data = await res.json();
+  return data
+}
 
-//   if (!res.ok) {
-//     throw new Error("failed to fetch data");
-//   }
-//   return res.json();
-// }
-
-const Blog = () => {
+const Blog =async () => {
   const i = "/bgvideo.mp4";
 
   const [activeTab, setActiveTab] = useState('Event');
@@ -211,6 +214,19 @@ const Blog = () => {
   };
 
   // const data = getdata();
+  const data=await getdata();
+  console.log("dataaaaaaaa->>>>>",data)
+
+  const eventData = data.filter((item) => item.category == 'Event');
+  const blogData = data.filter((item) => item.category == 'Blog');
+  console.log("eventData----->>>",eventData)
+  console.log("blogData----->>>",blogData)
+
+  data.map((item)=>
+  {
+    console.log("item--->>",item)
+  })
+  console.log(data)
   return (
     <>
       <div className={styles.mainDiv}>

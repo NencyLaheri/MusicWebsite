@@ -1,11 +1,23 @@
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
+  category: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,
   },
-  desc: {
+  video: {
+    type: String,
+    required: true,
+  },
+  body: {
+    type: String,
+    required: true,
+  },
+  shortDes: {
     type: String,
     required: true,
   },
@@ -13,11 +25,15 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  content: {
+  personName:{
+    type:String,
+    required:true,
+  },
+  personImg: {
     type: String,
     required: true,
   },
-  username: {
+  longDesc: {
     type: String,
     required: true,
   },
