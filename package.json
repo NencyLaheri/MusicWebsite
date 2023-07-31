@@ -16,6 +16,7 @@
     "mongoos": "^0.0.1-security",
     "mongoose": "^7.4.1",
     "next": "13.4.9",
+    "next-auth": "^4.22.3",
     "postcss": "^8.4.25",
     "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
