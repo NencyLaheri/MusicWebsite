@@ -3,6 +3,7 @@ import React, { useContext,useState } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { ThemeContext } from '@/context/ThemeContext'
+import { useRouter } from 'next/navigation'
 
 const Register = () => {
     const { toggle,mode }=useContext(ThemeContext) 
@@ -22,25 +23,30 @@ const Register = () => {
       event.target.style.borderColor = mode === 'dark' ? 'grey' : 'black';
     };
 
+    const [err, setErr] = useState(false);
+    const router=useRouter()
+
     const handleSubmit= async(e)=>
     {
-        const [err, setErr] = useState(false);
-        e.preveneDefault()
-        const name=e.target[0].value
-        const email=e.target[0].value
-        const password=e.target[0].value
+        
+        e.preventDefault()
+        const name=e.target[0].value;
+        const email=e.target[1].value;
+        const password=e.target[2].value;
+        console.log("dataaaaaaaa---->>>",name,email,password);
 
         try
         {
-            const res=await fetch("/api/auth/register")
-        }catch(err)
+            const res=await fetch("/api/auth/register",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,email,password}),});
+            res.status===201 && router.push("/dashboard/login?success=Account has been created")
+          }catch(err)
         {
             setErr(true)
         }
     }
   return (
     <div className={styles.container}>
-      <form action="" className={styles.form} onSubmit={handleSubmit}>
+      <form  className={styles.form} onSubmit={handleSubmit}>
         <input type="text" placeholder='Username' className={styles.input} required style={inpuStyle} onFocus={handleInputFocus} onBlur={handleInputBlur}/>
         <input type="email" placeholder='Email' className={styles.input} required style={inpuStyle} onFocus={handleInputFocus} onBlur={handleInputBlur}/>
         <input type="password" placeholder='Password' className={styles.input} required style={inpuStyle} onFocus={handleInputFocus} onBlur={handleInputBlur}/>
