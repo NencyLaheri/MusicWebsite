@@ -31,3 +31,15 @@ export const GET=async (request)=>
 //     }
     
 // }
+
+export const POST = async (request)=>{
+    try{
+         // const requestBody = request.body;
+      const requestBody1 = await request.text();
+      // console.log("request body", requestBody);
+      console.log("request body", requestBody1);
+    }
+    catch(err){
+        return new NextResponse("Error",{status:500})
+    }
+}
