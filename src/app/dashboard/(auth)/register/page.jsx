@@ -4,9 +4,13 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useRouter } from "next/navigation";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Register = () => {
   const [data, setData] = useState({});
+  const notify = () => toast("Product Added to Cart!", { theme: "dark" });
 
   console.log(data,"all about data -------------------->>>>>>>>>")
 
@@ -31,9 +35,9 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const name = e.target[0].value;
-    const email = e.target[1].value;
-    const password = e.target[2].value;
+    // const name = e.target[0].value;
+    // const email = e.target[1].value;
+    // const password = e.target[2].value;
     // console.log("dataaaaaaaa---->>>", name, email, password);
 
     try {
@@ -42,14 +46,35 @@ const Register = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      res.status === 201 &&
+      console.log(res,"this is response")
+      const responseData = await res.json();
+      if(res.status ==200){
+        console.log("response",responseData)
+        // notify();
+        // toastUpdate();
+       
+        // toast.success(res.data.message);
+        console.log("res with status 200")
         router.push("/dashboard/login?success=Account has been created");
+      }
+      // res.status == 200 &&c
+      //   router.push("/dashboard/login?success=Account has been created");
     } catch (err) {
       setErr(true);
     }
   };
+
+  const toastUpdate =() =>{
+    console.log("its easy")
+    toast("Product Added to Cart!", { theme: "dark" });
+  }
+
+
+
+
   return (
     <div className={styles.container}>
+      <ToastContainer />
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type="text"

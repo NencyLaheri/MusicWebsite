@@ -5,6 +5,7 @@ import hero1 from 'public/giphy.gif'
 import hero from 'public/giphy1.gif'
 import styles from './page.module.css'
 import Button from '@/component/button/Button'
+import { ToastContainer } from 'react-toastify'
 
 export default function Home() {
   return (
