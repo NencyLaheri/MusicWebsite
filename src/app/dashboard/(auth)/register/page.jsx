@@ -12,7 +12,7 @@ const Register = () => {
   const [data, setData] = useState({});
   const notify = () => toast("Product Added to Cart!", { theme: "dark" });
 
-  console.log(data,"all about data -------------------->>>>>>>>>")
+  console.log(data,"all about data ------->>>>>>>>>")
 
   const { toggle, mode } = useContext(ThemeContext);
   const inpuStyle = {
@@ -53,21 +53,26 @@ const Register = () => {
         // notify();
         // toastUpdate();
        
-        // toast.success(res.data.message);
+        toast.success(responseData.message);
         console.log("res with status 200")
         router.push("/dashboard/login?success=Account has been created");
+      }
+      else if(res.status==409)
+      {
+        toast.error(responseData.message)
       }
       // res.status == 200 &&c
       //   router.push("/dashboard/login?success=Account has been created");
     } catch (err) {
       setErr(true);
+      console.log("erorrrrr------",err)
     }
   };
 
-  const toastUpdate =() =>{
-    console.log("its easy")
-    toast("Product Added to Cart!", { theme: "dark" });
-  }
+  // const toastUpdate =() =>{
+  //   console.log("its easy")
+  //   toast("Product Added to Cart!", { theme: "dark" });
+  // }
 
 
 

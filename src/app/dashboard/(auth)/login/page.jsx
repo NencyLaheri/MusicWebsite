@@ -4,6 +4,9 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useRouter } from "next/navigation";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
   const [data, setData] = useState({});
@@ -39,12 +42,23 @@ const Login = () => {
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" }, 
         body: JSON.stringify(data),
       });
-      res.status === 200 &&
+      const responseData = await res.json();
+      console.log("responseDataaaa",responseData)
+      if(res.status == 200)
+      {
         // router.push("/dashboard/login?success=Account has been created");
+      
         console.log("login successfully")
+        toast.success(responseData.message);
+      }
+      else
+      {
+        toast.error(responseData.message)
+      }
+     
     } catch (err) {
       setErr(true);
     }
