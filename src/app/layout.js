@@ -11,7 +11,7 @@ import React, { useState } from "react";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);ttt
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <html lang="en">

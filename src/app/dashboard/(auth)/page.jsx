@@ -13,17 +13,15 @@ const Dashboard = () => {
 
     const session=useSession()
     console.log("sessionnnnnnnn",session)
-  return (
-    <div className={styles.container}>
-      <Link href="/dashboard/login">
-          <button className={styles.button} style={btnStyle} >Login</button>
-      </Link>
-      <Link href="/dashboard/register">
-        <button className={styles.button} style={btnStyle} >Register</button>
-      </Link>
-      
-
-    </div>
+    return (
+      <div className={styles.container}>
+        <Link href="/dashboard/login">
+            <button className={styles.button} style={btnStyle} >Login</button>
+        </Link>
+        <Link href="/dashboard/register">
+          <button className={styles.button} style={btnStyle} >Register</button>
+        </Link>
+      </div>
   )
 }
 
